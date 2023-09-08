@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0;
+   
+}
+
+
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-container{
+  background-color: #dddddd;
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: auto;
+ 
+  border-radius: 10px;
+   position: fixed;
+   left: 0%;
+    
+
+}
+
+.left-items{
+    margin: 30px 0;
+    
+
+   
+}
+
+
+.main-img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+    
+}
+
+
+.name{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 150%;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.designation{
+         font-family: 'Montserrat', sans-serif;
+         padding-top: 20px;
+}
+
+.left-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.left-nav a{
+    padding-top: 20px;
+
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+
+}
+
+#nv{
+   
+    text-decoration: none;
+    
+}
+
+#nv:hover{
+    color: navy;
+}
+
+
+
+#nv::after {
+    content: ' ';
+    display: flex;
+    margin: auto;
+    width: 0%;
+    height: 1.5px;
+    background: navy;
+    transition: width .2s ease-in;
+    
+  }
+  
+#nv:hover::after {
+    width: 50%;
+
+   }
+
+
+
+.footer{
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+
+}
+
+.my-name{
+    text-decoration: none;
+    font-weight: 900;
+    color: navy;
+   }
+
+
+.right-container{
+ position: relative;
+ left: 10vw;
+width: 50vw;
+ 
+}
+
+.side-img{
+    width: 30vw;
+    height: 90vh;
+    position: relative;
+    top: -12vh;
+    left: 22vw;
+ 
+}
+
+
+
+
+
+ .text-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+   
+    top: 30vh;
+    height: fit-content;
+    width: fit-content;
+}
+
+.side-text{
+ 
+   
+    font-weight: bolder;
+   font-size:xx-large;
+    height: 100px;
+    font-style: oblique;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+  
+    animation-iteration-count:infinite;
+   
+    animation-fill-mode: forwards;
+ }
+
+
+@keyframes example {
+    from {
+      width: 0;
+    }
+    to {
+      width: 170px;
+    }
+  }
+
+
+@media screen and (max-width: 860px) {
+    .right-container{
+        position: relative;
+        left: 10vw;
+       }
+
+       .about-details{
+        width:400px;
+    }
+
+
+    
+    
+}
+
+
+.page-top{
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+
+}
+

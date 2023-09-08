@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.submit-btn {
+  position:relative;
+  padding: 5px 7px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: 'Montserrat', sans-serif;
+ 
+  text-transform: uppercase;
+  
+  color: white;
+  
+  background-color: navy;
+ 
+    border-radius: 5px;
+
+  overflow: hidden;   
+}
+
+
+.right::after, .submit-btn::after {
+  content: var(--content);
+  
+  position: absolute;
+
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+.submit-btn::after{
+  
+  top: -35px;
+  left: -33px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: rgb(25, 107, 107);
+
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+.submit-btn:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+.submit-btn .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+.submit-btn .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+.submit-btn::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+.submit-btn{
+    text-decoration: none;
+   
+}
+
+.contact-button{
+    display: flex;
+    justify-content: center;
+}

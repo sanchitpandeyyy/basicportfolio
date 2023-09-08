@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.skillspage{
+   height: 100vh;
+}
+
+
+
+
+.myskill{
+   width: 50vw;
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+.contact-section{
+   padding: 30px;
+   background-color: #dddddd;
+   width: 52vw;
+}
+
+
+
+.contact-info, .contact-form {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2 {
+   margin-bottom: 10px;
+}
+
+.social-icons {
+   margin-top: 20px;
+}
+
+.icon-link {
+   display: inline-block;
+   margin-right: 7px;
+   color: #333;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form button {
+   width: 100%;
+   margin-bottom: 15px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.contact-form button {
+   background-color: #333;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+}
+
+.contact-form button:hover {
+   background-color: #555;
+}
